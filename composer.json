@@ -1,0 +1,25 @@
+{
+    "name": "itiden/composer-merge",
+    "authors": [
+        {
+            "name": "Andreas Bergqvist",
+            "email": "andreas@itiden.se"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "wikimedia/composer-merge-plugin": "^1.3@dev"
+    },
+    "extra": {
+        "merge-plugin": {
+            "include": [
+                "section1/composer.json",
+                "section2/composer.json",
+                "shared/composer.json"
+            ],
+            "recurse": false,
+            "replace": false,
+            "merge-extra": false
+        }
+    }
+}
